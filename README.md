@@ -44,7 +44,11 @@ Within your code, consider the scope of the inputs and how the different paramet
 
 Finally, please update your README with a brief description of your methods. 
 
+Forward Algorithm
+The forward function calculates the likelihood of an observed sequence of states given the Hidden Markov Model (HMM). It uses dynamic programming to compute the forward probabilities, which represent the probability of ending up in each hidden state after observing a sequence of states. This function is useful for tasks such as speech recognition and bioinformatics.
 
+Viterbi Algorithm
+The viterbi function finds the most likely sequence of hidden states that could have generated a given sequence of observed states. It uses dynamic programming to compute the Viterbi probabilities and backpointers, which are then used to trace back the most probable path. This function is commonly used in applications such as part-of-speech tagging and gene prediction.
 
 ## Task List
 
