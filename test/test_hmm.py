@@ -27,7 +27,7 @@ def test_mini_weather():
     mini_input_hidden_states = mini_input['best_hidden_state_sequence']
 
     forward_probability = mini_hmm_model.forward(mini_input_observation_states)
-    assert np.isclose(forward_probability, 0.03506, atol=1e-5)
+    assert np.isclose(forward_probability, 0.035064, atol=1e-5)
 
     assert(list(mini_input_hidden_states) == mini_hmm_model.viterbi(mini_input_observation_states))
 
